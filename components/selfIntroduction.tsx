@@ -45,9 +45,20 @@ export default function SelfIntroduction() {
 }
 
 const getCurrentYearsSince = (year: number, month: number, day: number): string => {
-    const startDate = new Date(year, month - 1, day);
+    const birthDate = new Date(year, month - 1, day);
     const now = new Date();
-    const years = now.getFullYear() - startDate.getFullYear();
+
+    let years = now.getFullYear() - birthDate.getFullYear();
+    let months = now.getMonth() - birthDate.getMonth();
+
+    if (now.getDate() < birthDate.getDate()) {
+        months--;
+    }
+
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
 
     return `${years}`;
 };
