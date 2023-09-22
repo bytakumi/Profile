@@ -28,13 +28,17 @@ export default function Home() {
     {/* OBJECT: Hobby */}
     <div className="py-32 md:py-16 md:min-h-screen">
       <div className="w-full flex flex-col md:flex-row">
-        {/* OBJECT: Title */}
-        <div className="w-full flex justify-center items-center pb-20 md:pb-0 md:min-h-screen">
+        {/* OBJECT: Title (Displayed only when less than or equal to md.) */}
+        <div className="w-full flex md:hidden justify-center items-center pb-20 md:pb-0 md:min-h-screen">
           <div className="font-semibold text-slate-200 text-4xl">趣味</div>
         </div>
         {/* OBJECT: Content */}
-        <div className="w-full flex items-center border-l border-slate-100/30">
+        <div className="w-full flex items-center border-r md:border-l border-slate-100/30">
           <Hobby />
+        </div>
+        {/* OBJECT: Title (Displayed only with md or more) */}
+        <div className="w-full hidden md:flex justify-center items-center pb-20 md:pb-0 md:min-h-screen">
+          <div className="font-semibold text-slate-200 text-4xl">趣味</div>
         </div>
       </div>
     </div>
