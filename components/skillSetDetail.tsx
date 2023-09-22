@@ -36,11 +36,11 @@ function skillDetail({ name, star }: SkillDetailProps) {
         <>
         <div className="flex w-full justify-center">
             <div className="w-full flex items-center justify-end">
-                {range(1, star).map(() => 
-                    <span className="text-amber-300"><AiFillStar /></span>
+                {range(1, star).map((_, i) => 
+                    <span key={i} className="text-amber-300"><AiFillStar /></span>
                 )}
-                {range(1, outlineStarNumber).map(() => 
-                    <span className="text-amber-300/30"><AiOutlineStar /></span>
+                {range(1, outlineStarNumber).map((_, i) => 
+                    <span key={i} className="text-amber-300/30"><AiOutlineStar /></span>
                 )}
             </div>
             <div className="w-full text-left pl-4 text-slate-100">{name}</div>
