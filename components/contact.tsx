@@ -30,7 +30,7 @@ export default function Contact() {
                 </div>
                 <div className="text-5xl md:text-6xl text-slate-200">
                     <Popover>
-                        <PopoverTrigger asChild>
+                        <PopoverTrigger>
                             <RiMailFill />
                         </PopoverTrigger>
                         <PopoverContent side="right">
