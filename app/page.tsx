@@ -7,15 +7,15 @@ export default function Home() {
   return (
     <>
     {/* OBJECT: Self introduction */}
-    <div className="h-screen flex items-center w-2/3 mx-auto">
+    <div className="h-screen flex items-center px-4 md:px-0 md:w-2/3 mx-auto">
       <SelfIntroduction />
     </div>
 
     {/* OBJECT: Skill set */}
     <div className="py-16 min-h-screen">
-      <div className="w-full flex">
+      <div className="w-full flex flex-col md:flex-row">
         {/* OBJECT: Title */}
-        <div className="w-full flex justify-center border-r border-slate-100/30 items-center">
+        <div className="w-full flex justify-center border-r border-slate-100/30 items-center pb-20 md:pb-0">
           {/* <div className="font-semibold text-slate-200 text-4xl">スキルセット</div> */}
           <div className="font-semibold text-slate-200 text-4xl border-x border-slate-100/30 px-6 py-2">スキルセット</div>
         </div>
