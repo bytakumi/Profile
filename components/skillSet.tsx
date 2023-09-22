@@ -40,7 +40,7 @@ const skills: SkillProps[] = [
                 name: "Nextjs",
                 star: 3,
             }, {
-                name: "Tailwind CSS",
+                name: "TailwindCSS",
                 star: 3,
             }, {
                 name: "React",
@@ -66,7 +66,7 @@ const skills: SkillProps[] = [
                 name: "Docker",
                 star: 4,
             }, {
-                name: "AWS API Gateway",
+                name: "AWS APIGateway",
                 star: 3,
             }, {
                 name: "AWS EC2",

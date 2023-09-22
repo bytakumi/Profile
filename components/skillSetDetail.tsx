@@ -13,7 +13,7 @@ export type SkillDetailProps = {
 export default function SkillSetDetail({ categoryName, skillDetailList }: SkillProps) {
     return (
         <>
-        <div className="flex justify-center flex-col w-3/5 mx-auto">
+        <div className="flex justify-center flex-col md:w-3/5 mx-auto">
             {/* OBJECT: Category (Language, Infra, etc...) */}
             <div className="border-b borer-slate-100/20 pb-1 mb-4 flex justify-center w-4/5 mx-auto">
                 <div className="px-2 text-slate-100 text-base font-bold">
