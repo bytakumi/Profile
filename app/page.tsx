@@ -16,11 +16,9 @@ export default function Home() {
       <div className="w-full flex flex-col md:flex-row">
         {/* OBJECT: Title */}
         <div className="w-full flex justify-center border-r border-slate-100/30 items-center pb-20 md:pb-0">
-          {/* <div className="font-semibold text-slate-200 text-4xl">スキルセット</div> */}
           <div className="font-semibold text-slate-200 text-4xl border-x border-slate-100/30 px-6 py-2">スキルセット</div>
         </div>
         {/* OBJECT: Content */}
-        {/* <div className="w-full"> */}
         <div className="w-full">
           <SkillSet />
         </div>
@@ -29,14 +27,14 @@ export default function Home() {
 
     {/* OBJECT: Hobby */}
     <div className="py-16 min-h-screen">
-      <div className="w-full flex">
-        {/* OBJECT: Content */}
-        <div className="w-full flex items-center">
-          <Hobby />
-        </div>
+      <div className="w-full flex flex-col md:flex-row">
         {/* OBJECT: Title */}
-        <div className="w-full flex justify-center border-l border-slate-100/30 items-center min-h-screen">
+        <div className="w-full flex justify-center items-center pb-20 md:pb-0 md:min-h-screen">
           <div className="font-semibold text-slate-200 text-4xl border-x border-slate-100/30 px-6 py-2">趣味</div>
+        </div>
+        {/* OBJECT: Content */}
+        <div className="w-full flex items-center border-l border-slate-100/30">
+          <Hobby />
         </div>
       </div>
     </div>

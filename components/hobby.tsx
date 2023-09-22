@@ -11,11 +11,11 @@ const hobbies: HobbyProps[] = [
         content: "疲れた時の筋トレ",
         icon: <MdSportsHandball />,
     }, {
-        content: "あまり興味のない音楽のライブ",
-        icon: <MdLibraryMusic />,
-    }, {
         content: "迷子になりそうな散歩",
         icon: <FaWalking />,
+    }, {
+        content: "あまり興味のない音楽のライブ",
+        icon: <MdLibraryMusic />,
     }
 ]
 
@@ -27,7 +27,7 @@ export default function Hobby() {
                 <div className="font-bold text-2xl grid grid-cols-1 gap-4">
                     {hobbies.map((hobby, i) => {
                         return (
-                            <div key={i} className="flex gap-2 items-center">{hobby.icon}{hobby.content}</div>
+                            <div key={i} className="flex gap-2 items-center justify-center md:justify-start">{hobby.icon}{hobby.content}</div>
                         )
                     })}
                 </div>
